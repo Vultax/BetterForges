@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "better_forges",
+  "version": "${version}",
+  "name": "Better Forges",
+  "description": "Add more functionality to forges and smithing.",
+  "authors": ["Vultax"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "org.vultax.better_forges.BetterForges"
+    ]
+  },
+  "mixins": [
+    "better_forges.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "polymer-core": ">=${polymer_version}+${minecraft_version}"
+  }
+}
